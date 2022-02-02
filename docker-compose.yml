@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    command: java -jar /home/service/target/study_d-1.0.jar
+    restart: unless-stopped
+    ports:
+      - "3322:3322"
+    environment:
+      - EXAMPLE_ENVIRONMENT_VARIABLE=value from docker-compose

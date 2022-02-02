@@ -1,0 +1,7 @@
+server:
+  port: 3322
+
+
+example:
+  environment:
+    variable: ${EXAMPLE_ENVIRONMENT_VARIABLE:defaultValue}

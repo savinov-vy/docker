@@ -8,4 +8,4 @@ services:
     ports:
       - "3322:3322"
     environment:
-      - EXAMPLE_ENVIRONMENT_VARIABLE=value from docker-compose
+      - EXAMPLE_ENVIRONMENT_VARIABLE=123456

@@ -4,4 +4,4 @@ server:
 
 example:
   environment:
-    variable: ${EXAMPLE_ENVIRONMENT_VARIABLE:defaultValue}
+    variable:

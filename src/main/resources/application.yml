@@ -1,6 +1,20 @@
 server:
   port: 3322
 
+spring:
+  jpa:
+    show-sql: false
+    properties.hibernate.dialect: org.hibernate.dialect.PostgreSQL94Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${POSTGRES_URL:localhost:5432/study_d}
+    username: study_d_adm
+    password: ${POSTGRES_PASSWORD:root}
+
 
 example:
   environment:

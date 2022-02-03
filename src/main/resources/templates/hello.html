@@ -9,5 +9,9 @@
 <th:block th:unless="${#strings.isEmpty(environmentVar)}">
     <h2>environment variable from docker: <th:block th:text="${environmentVar}"/></h2>
 </th:block>
+
+<th:block th:unless="${#strings.isEmpty(savedEntity.title)}">
+    <h2>Saved object title: <th:block th:text="${savedEntity.title +' №'+ savedEntity.id}"/></h2>
+</th:block>
 </body>
 </html>

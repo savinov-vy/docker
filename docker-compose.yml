@@ -3,7 +3,7 @@ version: '3'
 services:
   study_d:
     build: .
-    command: java -jar /home/service/target/study_d-1.0.jar
+    command: java -jar /home/service/study_d-1.0.jar
     container_name: study_d
     restart: unless-stopped
     ports:
